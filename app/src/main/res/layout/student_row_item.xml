@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/tvTestNoView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Roll No :"
+        android:layout_marginStart="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvTestNo"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/tvTestNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTestNoView"
+        app:layout_constraintTop_toTopOf="@id/tvTestNoView"
+        app:layout_constraintBottom_toBottomOf="@id/tvTestNoView"/>
+    <TextView
+        android:id="@+id/tvTestDateView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        app:layout_constraintTop_toBottomOf="@+id/tvTestNoView"
+        app:layout_constraintStart_toStartOf="@id/tvTestNoView"
+        app:layout_constraintEnd_toStartOf="@id/tvTestDate"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/tvTestDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTestDateView"
+        app:layout_constraintTop_toTopOf="@id/tvTestDateView"
+        app:layout_constraintBottom_toBottomOf="@id/tvTestDateView"/>
+    <TextView
+        android:id="@+id/tvTestSubjectView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        app:layout_constraintTop_toBottomOf="@+id/tvTestDateView"
+        app:layout_constraintStart_toStartOf="@id/tvTestDateView"
+        app:layout_constraintEnd_toStartOf="@id/tvTestSubject"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/tvTestSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTestSubjectView"
+        app:layout_constraintTop_toTopOf="@id/tvTestSubjectView"
+        app:layout_constraintBottom_toBottomOf="@id/tvTestSubjectView"/>
+    <TextView
+        android:id="@+id/tvTestTopicView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Class :"
+        app:layout_constraintTop_toBottomOf="@+id/tvTestSubjectView"
+        app:layout_constraintStart_toStartOf="@id/tvTestSubjectView"
+        app:layout_constraintEnd_toStartOf="@id/tvTestTopic"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/tvTestTopic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTestTopicView"
+        app:layout_constraintTop_toTopOf="@id/tvTestTopicView"
+        app:layout_constraintBottom_toBottomOf="@id/tvTestTopicView"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvTestTopic"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
